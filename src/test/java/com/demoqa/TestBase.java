@@ -15,7 +15,7 @@ public class TestBase {
     static String url = System.getProperty("baseDemoUrl");
     static String browserSize = System.getProperty("browserSize");
     static String selenoidUrl = System.getProperty("selenoidServer");
-    static String browser = System.getProperty("browser");
+    static String browserVersion = System.getProperty("browserVersion");
 
     @BeforeAll
     static void setUp() {
@@ -26,7 +26,7 @@ public class TestBase {
         Configuration.baseUrl = url;
         Configuration.browserSize = browserSize;
         Configuration.remote = "https://" + config.login() + ":" + config.password() + "@" + selenoidUrl;
-        Configuration.browser = browser;
+        Configuration.browserVersion = browserVersion;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
