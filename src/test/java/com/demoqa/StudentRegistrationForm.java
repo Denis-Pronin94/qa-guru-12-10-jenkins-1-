@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Tag("demoqa")
-public class Student_Registration_Form extends TestBase {
+public class StudentRegistrationForm extends TestBase {
 
     String firstName = "Denis";
     String lastName = "Pronin";
